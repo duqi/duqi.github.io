@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/2016-10-14-nba-test.html" />
+
+    <title>   &mdash; Test
+</title>
+
+      <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+      <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+      <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+      <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+
+
+
+    <link rel="stylesheet" href="/theme/css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-85513545-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+    <meta name="author" content="杜七">
+    <meta name="description" content="import requests import pandas as pd import numpy as np %matplotlib inline import matplotlib.pyplot as plt import seaborn as sns from IPython.display import IFrame sns.set_color_codes() sns.set_style("white") IFrame('http://stats.nba.com/movement/#!/?GameID=0041400235&GameEventID;=308', width=700, height=400) <iframe width="700" height="400 …">
+  <meta name="tags" contents="数据分析, NBA, ">
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <h1 class="header-name">
+        <a class="nodec" href=""></a>
+      </h1>
+      <h3 class="header-text"></h3>
+      <ul class="header-menu list-inline">
+          <li><a class="nodec" href="/categories.html">Categories</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" href="/tags.html">Tags</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" href="/archives.html">Archives</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec icon-mail-alt" href="mailto:yuechaoshiwo@163.com"></a></li>
+      </ul>
+    </div>
+  </div>
+</header> <!-- /.header -->  <div class="container">
+  <div class="post full-post">
+    <h1 class="post-title">
+      <a href="/2016-10-14-nba-test.html" title="Permalink to Test">Test</a>
+    </h1>
+    <ul class="list-inline">
+      <li class="post-date">
+        <a class="text-muted" href="/2016-10-14-nba-test.html" title="2016-10-14T00:00:00+08:00">Fri 14 October 2016</a>
+      </li>
+      <li class="muted">&middot;</li>
+      <li class="post-category">
+        <a href="/category/nbashu-ju-fen-xi.html">NBA数据分析</a>
+      </li>
+        <li class="muted">&middot;</li>
+        <li>
+            <a href="/tag/shu-ju-fen-xi.html">数据分析</a>,             <a href="/tag/nba.html">NBA</a>        </li>
+        <li class="muted">&middot;</li>
+        <li>
+          <address class="post-author">
+            By <a href="/author/du-qi.html">杜七</a>
+          </address>
+        </li>
+    </ul>
+    <div class="post-content">
+      <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">set_color_codes</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;http://stats.nba.com/movement/#!/?GameID=0041400235&amp;GameEventID;=308&#39;</span><span class="p">,</span>
+              <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>    <span class="nt">&lt;iframe</span>
+        <span class="na">width=</span><span class="s">&quot;700&quot;</span>
+        <span class="na">height=</span><span class="s">&quot;400&quot;</span>
+        <span class="na">src=</span><span class="s">&quot;http://stats.nba.com/movement/#!/?GameID=0041400235&amp;GameEventID;=308&quot;</span>
+        <span class="na">frameborder=</span><span class="s">&quot;0&quot;</span>
+        <span class="err">allowfullscreen</span>
+    <span class="nt">&gt;&lt;/iframe&gt;</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://stats.nba.com/player/#!/203083/?p=andre-drummond&quot;</span>
+<span class="c1"># Get the webpage</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="c1"># Take a look at the keys from the dict</span>
+<span class="c1"># representing the JSON data</span>
+<span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>[&#39;Content-Length&#39;,
+ &#39;Server&#39;,
+ &#39;Connection&#39;,
+ &#39;ETag&#39;,
+ &#39;Cache-Control&#39;,
+ &#39;Date&#39;,
+ &#39;Content-Type&#39;]
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>
+</pre></div>
+    </div>
+  </div>
+  <hr class="separator">
+  <div class="col-md-8 col-md-offset-2">
+  </div>
+  </div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-center">
+      duqi, <a href="" target="_blank"></a> unless otherwise noted.
+    </p>
+    <div class="text-center">
+      Generated by <a href="http://getpelican.com" target="_blank">Pelican</a> with the <a href="http://github.com/nairobilug/pelican-alchemy">alchemy</a> theme.
+    </div>
+  </div>
+</footer> <!-- /.footer -->
+  <script src="/theme/js/jquery.min.js"></script>
+  <script src="/theme/js/bootstrap.min.js"></script>
+</body> <!-- 42 -->
+
+</html>

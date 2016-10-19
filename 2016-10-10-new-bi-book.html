@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/2016-10-10-new-bi-book.html" />
+
+    <title>   &mdash; 「数据分析师」新人手册
+</title>
+
+      <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+      <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+      <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+      <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+
+
+
+    <link rel="stylesheet" href="/theme/css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-85513545-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+    <meta name="author" content="杜七">
+    <meta name="description" content="本手册当时为空格数据分析师新同学准备，现拓展一下，也供其他人参考。 0， 手册更新记录 Date Editor Description 2016.06.08 duqi@kongge.com create 2016.06.11 duqi@kongge.com add reference books 2016.10.19 yuechaoshiwo@163.com modify content 1，安装系统软件： Sublime Text （写代码专用） Navicat （连接mysql数据库专用） RStudio/Python/Ipython （分析数据专用，哪个用着舒服，自己挑一个） ODPS CLT（提取数据专用 …">
+  <meta name="tags" contents="数据分析师, ">
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <h1 class="header-name">
+        <a class="nodec" href=""></a>
+      </h1>
+      <h3 class="header-text"></h3>
+      <ul class="header-menu list-inline">
+          <li><a class="nodec" href="/categories.html">Categories</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" href="/tags.html">Tags</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" href="/archives.html">Archives</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec icon-mail-alt" href="mailto:yuechaoshiwo@163.com"></a></li>
+      </ul>
+    </div>
+  </div>
+</header> <!-- /.header -->  <div class="container">
+  <div class="post full-post">
+    <h1 class="post-title">
+      <a href="/2016-10-10-new-bi-book.html" title="Permalink to 「数据分析师」新人手册">「数据分析师」新人手册</a>
+    </h1>
+    <ul class="list-inline">
+      <li class="post-date">
+        <a class="text-muted" href="/2016-10-10-new-bi-book.html" title="2016-06-08T00:00:00+08:00">Wed 08 June 2016</a>
+      </li>
+      <li class="muted">&middot;</li>
+      <li class="post-category">
+        <a href="/category/shu-ju-fen-xi-shi.html">数据分析师</a>
+      </li>
+        <li class="muted">&middot;</li>
+        <li>
+            <a href="/tag/shu-ju-fen-xi-shi.html">数据分析师</a>        </li>
+        <li class="muted">&middot;</li>
+        <li>
+          <address class="post-author">
+            By <a href="/author/du-qi.html">杜七</a>
+          </address>
+        </li>
+    </ul>
+    <div class="post-content">
+      <blockquote>
+<p>本手册当时为<strong>空格</strong>数据分析师新同学准备，现拓展一下，也供其他人参考。  </p>
+</blockquote>
+<h2>0， 手册更新记录</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th align="center">Editor</th>
+<th align="right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016.06.08</td>
+<td align="center">duqi@kongge.com</td>
+<td align="right">create</td>
+</tr>
+<tr>
+<td>2016.06.11</td>
+<td align="center">duqi@kongge.com</td>
+<td align="right">add reference  books</td>
+</tr>
+<tr>
+<td>2016.10.19</td>
+<td align="center">yuechaoshiwo@163.com</td>
+<td align="right">modify content</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1，安装系统软件：</h2>
+<ul>
+<li>Sublime Text （写代码专用）</li>
+<li>Navicat （连接mysql数据库专用）</li>
+<li>RStudio/Python/Ipython （分析数据专用，哪个用着舒服，自己挑一个）</li>
+<li>ODPS CLT（提取数据专用，还要安装一个jdk）</li>
+</ul>
+<hr />
+<h2>2，开通账号：</h2>
+<ul>
+<li>注册一个gitlab账号，http://git.kongge.com/users/sign_in | 或者github账号</li>
+<li>自己找一个可以记录东西的地方，比如，自己搭一个BLOG，比如使用Pelican，或者用『简书』，或者其他舒服的地方</li>
+</ul>
+<hr />
+<h2>3，<strong>必须要完成的事情：</strong></h2>
+<div class="highlight"><pre><span></span>使用自己公司的产品，全部体验一遍，比如发布服务，购买，跟服务者聊天，给买家聊天；
+根据自己的体验，结合相关的数据来check，是否有什么问题；
+体验产品过程中，记录自己不清楚，或者体验不好的地方，反馈给其他同学。
+</pre></div>
+
+
+<ul>
+<li>自己发布一个服务（所有的选项都填一遍）</li>
+<li>自己去拍各个类目的服务者一个服务，然后体验一下（可以一周-两周内完成）</li>
+<li>结合相应的<strong>item</strong>、<strong>orders</strong>等报表，看自己发的服务，和订单的情况</li>
+<li>当然，空格上所有的产品都要体验一遍</li>
+<li>收集这个过程中碰到的问题，体验不好的地方，BUG，等等。把体验过程记录，周知给团队其他同学</li>
+<li>学会使用sublime text </li>
+<li>学会Markdown语法</li>
+<li>学会Git的操作</li>
+</ul>
+<hr />
+<h2>4，分析师须知：</h2>
+<ul>
+<li>不管何时何地何人，<strong>数据安全</strong>永远最重要</li>
+<li>不了解业务的情况下，不要说话，也不要做东西</li>
+<li>做事前，先想清楚，问明白，再去做。切记急急忙忙！！！</li>
+<li>没有不合理的需求，只有不清楚的需求。</li>
+<li>跟别人沟通的时候，要想TA『背后』想说的到底是什么，而不仅仅是TA说出来，或者写出来的。</li>
+<li>做事情的时候，用自己最擅长的方式解决。</li>
+<li>不管提供数据，还是提供报告，要始终坚持的四大原则：<strong>准确、有效、简洁、美观</strong></li>
+<li>分析师要提供的是<strong>有意义的分析结果和有用的建议</strong>，而不是一个结果！</li>
+<li>只有看的多，想的比别人多，才能看的比别人远、深!</li>
+<li>合理计划每天要做事情，不要逞强！</li>
+<li>如果一件事情自己预估要花1个小时，请留出2个小时的时间！</li>
+<li>不清楚的东西，找相关同学咨询和问清楚，不要藏着！</li>
+<li>每天留出一定的时间给自己，可以学点东西，或者浏览行业信息，也可以研究产品，等等。</li>
+<li>学会记录平时遇到问题和解决的方法，学会不定期的反思和总结，一定要写下来。</li>
+</ul>
+<hr />
+<h2>5，资料汇聚地：</h2>
+<div class="highlight"><pre><span></span>学习，是提高自己最快的方式。
+</pre></div>
+
+
+<ul>
+<li>
+<p><u>分析师拓展：</u></p>
+<ul>
+<li><a href="http://www.jianshu.com/p/0982bec8f602">数据分析师能力拆解</a></li>
+<li><a href="http://www.jianshu.com/p/a54c169c5d89">分析师软技能都是什么?</a></li>
+<li><a href="http://www.jianshu.com/p/15cba869a685">工作中如何提交一个靠谱的需求</a></li>
+<li><a href="http://www.jianshu.com/p/acf54084c1cb">工作中用词造句</a></li>
+<li><a href="http://www.jianshu.com/p/9e0a2cb73552">如何做一个BI？</a></li>
+</ul>
+</li>
+<li>
+<p><u>Git和Markdown相关：</u> </p>
+<ul>
+<li><a href="https://github.com/">Github</a></li>
+<li><a href="http://blog.jobbole.com/25775/">Git基础</a></li>
+<li><a href="http://www.runoob.com/git/git-tutorial.html">Git教程</a></li>
+<li><a href="http://blog.csdn.net/hangyuanbiyesheng/article/details/6731629">Git常用命令</a></li>
+<li><a href="http://www.jianshu.com/p/7ed7ec6aa158">Git命令解析</a></li>
+<li><a href="http://www.jianshu.com/p/1e402922ee32">Markdown入门指南</a></li>
+</ul>
+</li>
+<li>
+<p><u>电子书：</u></p>
+<div class="highlight"><pre><span></span>可以买纸质书，可以读电子书，follow your heart!   
+以下书目，时间有先后，即先阅读排名靠前的书目，以此类推。当然，如果对其他书目感兴趣，也可以先读。
+</pre></div>
+
+
+<ul>
+<li><a href="http://wiki.woodpecker.org.cn/moin/AskForHelp">《提问的智慧》</a></li>
+<li><a href="http://zhibimo.com/read/xiaolai/ba-shi-jian-dang-zuo-peng-you/index.html">《把时间当做朋友》</a></li>
+<li><a href="http://vdisk.weibo.com/s/aW80l40DPUxEh">《穷查理宝典——查理芒格语录》</a></li>
+<li><a href="http://pan.baidu.com/share/link?uk=355410795&amp;shareid=4170728556&amp;third=0&amp;adapt=pc&amp;fr=ftw">《证析》</a></li>
+<li><a href="http://pan.baidu.com/share/link?uk=151340932&amp;shareid=2833391950&amp;third=0&amp;adapt=pc&amp;fr=ftw">《预知社会:群体行为的内在法则》</a></li>
+</ul>
+</li>
+<li>
+<p><u>SQL汇总：</u></p>
+<ul>
+<li><a href="http://www.aiwanba.com/plugin/odps-doc/index.html">ODPS文档</a>：主要看『ODPS SQL』和『ODPS 基本概念及常用命令』 </li>
+<li><a href="http://www.runoob.com/mysql/mysql-tutorial.html">MYSQL教程</a>：总体看一遍，以后当做一个帮助文档，碰到什么问题了，可以去查询</li>
+</ul>
+</li>
+</ul>
+    </div>
+  </div>
+  <hr class="separator">
+  <div class="col-md-8 col-md-offset-2">
+  </div>
+  </div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-center">
+      duqi, <a href="" target="_blank"></a> unless otherwise noted.
+    </p>
+    <div class="text-center">
+      Generated by <a href="http://getpelican.com" target="_blank">Pelican</a> with the <a href="http://github.com/nairobilug/pelican-alchemy">alchemy</a> theme.
+    </div>
+  </div>
+</footer> <!-- /.footer -->
+  <script src="/theme/js/jquery.min.js"></script>
+  <script src="/theme/js/bootstrap.min.js"></script>
+</body> <!-- 42 -->
+
+</html>
